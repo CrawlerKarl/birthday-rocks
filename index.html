@@ -48,13 +48,14 @@ h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;text-wrap:balance}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
 .pane{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;min-width:0}
 .pane h3{font-size:1.5rem;font-weight:900}
-.hint{margin:4px 0 12px;color:var(--ink2);font-size:.92rem}
+.hint{margin:4px 0 12px;color:var(--ink2);font-size:.92rem;min-height:2.8em}
 .spin{position:relative;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:1;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
 .spin img{width:100%;height:100%;object-fit:contain;pointer-events:none}
 .spin.drag{cursor:grabbing}
 .spinhint{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);background:rgba(0,0,0,.55);color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:999px;pointer-events:none;transition:opacity .3s}
 .spin.touched .spinhint{opacity:0}
-model-viewer{width:100%;aspect-ratio:1;border-radius:16px;background:radial-gradient(circle at 50% 40%,#2a2622,#0e0c0a 70%);--poster-color:transparent;--progress-bar-color:var(--a)}
+.mv{position:relative;aspect-ratio:1;width:100%;border-radius:16px;overflow:hidden;background:radial-gradient(circle at 50% 40%,#2a2622,#0e0c0a 70%)}
+model-viewer{position:absolute;inset:0;width:100%;height:100%;--poster-color:transparent;--progress-bar-color:var(--a)}
 .know{margin-top:22px;background:var(--b);border-radius:22px;padding:20px 22px 18px}
 .know h3{font-size:1.4rem;font-weight:900;margin-bottom:8px}
 .know ol{margin:0;padding-left:22px;display:grid;gap:8px;font-size:1.02rem}
@@ -109,7 +110,7 @@ model-viewer{width:100%;aspect-ratio:1;border-radius:16px;background:radial-grad
     <div class="pane">
       <h3>Hold it</h3>
       <p class="hint">A 3D model built from the turntable photos. Drag to orbit, pinch to zoom.</p>
-      <model-viewer src="models/RM-0153.glb" poster="models/RM-0153.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Pink Geode"></model-viewer>
+      <div class="mv"><model-viewer src="models/RM-0153.glb" poster="models/RM-0153.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Pink Geode"></model-viewer></div>
     </div>
   </div>
   <div class="know"><h3>Three things to know</h3><ol><li>Pink agate this vivid owes its color to people: it is soaked in an aniline-type organic dye, which, unlike the older metal-salt colors, can fade in strong light.</li><li>Agate is a banded form of chalcedony, a microcrystalline quartz porous enough to absorb dyes well, so pale or dull agate is often colored artificially.</li><li>In a geode, the quartz crystals of the druzy lining grow around the cavity wall with each point aimed toward the hollow center.</li></ol></div>
@@ -138,7 +139,7 @@ model-viewer{width:100%;aspect-ratio:1;border-radius:16px;background:radial-grad
     <div class="pane">
       <h3>Hold it</h3>
       <p class="hint">A 3D model built from the turntable photos. Drag to orbit, pinch to zoom.</p>
-      <model-viewer src="models/RM-0154.glb" poster="models/RM-0154.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Honey Block"></model-viewer>
+      <div class="mv"><model-viewer src="models/RM-0154.glb" poster="models/RM-0154.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Honey Block"></model-viewer></div>
     </div>
   </div>
   <div class="know"><h3>Three things to know</h3><ol><li>Amethyst loses its violet color when heated above about 200 to 300 °C (392 to 572 °F), and most citrine is made by heating amethyst or smoky quartz.</li><li>Natural citrine tends to be pale; heated amethyst is usually a deeper yellow, orange or brown, and in geode pieces it is often darkest at the crystal tips and white near the base.</li><li>Amethyst&#x27;s purple comes from traces of iron plus natural irradiation in the quartz; heat-treated amethyst instead carries tiny amounts of the iron oxides hematite and goethite.</li></ol></div>
@@ -167,7 +168,7 @@ model-viewer{width:100%;aspect-ratio:1;border-radius:16px;background:radial-grad
     <div class="pane">
       <h3>Hold it</h3>
       <p class="hint">A 3D model built from the turntable photos. Drag to orbit, pinch to zoom.</p>
-      <model-viewer src="models/RM-0155.glb" poster="models/RM-0155.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Peacock Cluster"></model-viewer>
+      <div class="mv"><model-viewer src="models/RM-0155.glb" poster="models/RM-0155.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Peacock Cluster"></model-viewer></div>
     </div>
   </div>
   <div class="know"><h3>Three things to know</h3><ol><li>The metallic sheen is not the mineral: quartz, like other crystals, can be coated with metal vapors for an attractive shine, a finish the decorative market calls titanium or flame aura.</li><li>Quartz is the mineral that defines 7 on the Mohs hardness scale, so a steel blade will not scratch the crystals under this film.</li><li>Quartz is piezoelectric: it develops an electric charge under mechanical stress, which is why quartz crystal oscillators keep time in watches and clocks.</li></ol></div>
@@ -196,7 +197,7 @@ model-viewer{width:100%;aspect-ratio:1;border-radius:16px;background:radial-grad
     <div class="pane">
       <h3>Hold it</h3>
       <p class="hint">A 3D model built from the turntable photos. Drag to orbit, pinch to zoom.</p>
-      <model-viewer src="models/RM-0156.glb" poster="models/RM-0156.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Green Marble"></model-viewer>
+      <div class="mv"><model-viewer src="models/RM-0156.glb" poster="models/RM-0156.jpg" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="20deg" touch-action="pan-y" shadow-intensity="0.6" exposure="1.05" interaction-prompt="none" alt="3D model of The Green Marble"></model-viewer></div>
     </div>
   </div>
   <div class="know"><h3>Three things to know</h3><ol><li>Malachite takes its name from the Greek for the mallow plant, whose leaves match its green.</li><li>Mines around Kolwezi in Katanga supply much of the world&#x27;s malachite for polishing, the material that becomes palm stones, boxes and tabletops.</li><li>Malachite is a copper carbonate hydroxide that forms where copper sulfide ores weather near the surface; its concentric bands and rounded crusts record that slow growth.</li></ol></div>
